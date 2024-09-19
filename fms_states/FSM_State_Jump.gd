@@ -2,7 +2,8 @@ extends FSM_State
 class_name FSM_State_Jump
 
 
-func _init(_agent).(_agent):
+func _init(_agent):
+	super(_agent)
 	pass
 
 func input(fsm_input: FSM_Meta.FSM_Input) -> int:

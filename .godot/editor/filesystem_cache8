@@ -1,0 +1,31 @@
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1726738686
+default_env.tres::Environment::6667590503840485363::1726738681::0::1::::<><>::
+FMS_Meta.gd::GDScript::-1::1726737164::0::1::::FSM_Meta<>Node<>::
+FSM_State.gd::GDScript::-1::1726738658::0::1::::FSM_State<>RefCounted<>::
+icon.png::CompressedTexture2D::1595764982240151239::1726736609::1726737183::1::::<><>::
+::res://assets/::1726736608
+::res://assets/Ground/::1726737183
+finish_line.png::CompressedTexture2D::7079315755821576117::1726736608::1726737183::1::::<><>::
+ground.png::CompressedTexture2D::4814303991190003870::1726736608::1726737183::1::::<><>::
+::res://assets/location/::1726737184
+TX Tileset Ground.png::CompressedTexture2D::2524182130901643392::1726736608::1726737184::1::::<><>::
+TX Village Props.png::CompressedTexture2D::1877385210277606402::1726736608::1726737184::1::::<><>::
+::res://assets/Slimes/::1726737184
+slime_die.png::CompressedTexture2D::2325057644554684181::1726736608::1726737183::1::::<><>::
+slime_hit.png::CompressedTexture2D::8267972053894609389::1726736608::1726737183::1::::<><>::
+slime_idle1.png::CompressedTexture2D::5910394767549456957::1726736608::1726737183::1::::<><>::
+slime_idle2.png::CompressedTexture2D::1044878327432879562::1726736608::1726737183::1::::<><>::
+slime_idle3.png::CompressedTexture2D::4036981972217497461::1726736608::1726737183::1::::<><>::
+slime_jump.png::CompressedTexture2D::3953095102719713083::1726736608::1726737183::1::::<><>::
+slime_move.png::CompressedTexture2D::5710588755222653057::1726736608::1726737183::1::::<><>::
+slime_swallow.png::CompressedTexture2D::2733212407114539856::1726736608::1726737183::1::::<><>::
+::res://fms_states/::1726738659
+FSM_State_Idle.gd::GDScript::-1::1726738659::0::1::::FSM_State_Idle<>FSM_State<>::
+FSM_State_Jump.gd::GDScript::-1::1726737164::0::1::::FSM_State_Jump<>FSM_State<>::
+FSM_State_Move.gd::GDScript::-1::1726737164::0::1::::FSM_State_Move<>FSM_State<>::
+::res://fsm_agent/::1726738680
+FSM_Agent.gd::GDScript::-1::1726738570::0::1::::<>CharacterBody2D<>::
+FSM_Agent.tscn::PackedScene::5782049022256821392::1726738680::0::1::::<><>::res://fsm_agent/FSM_Agent.gd<>uid://bwk55s866j404::::res://assets/Slimes/slime_jump.png<>uid://cnmitehmla2mn::::res://assets/Slimes/slime_move.png<>uid://cqhblrcvhnx0x::::res://assets/Slimes/slime_idle1.png<>uid://o5e81mmoam63::::res://assets/Slimes/slime_idle2.png<>uid://bxrsrd1ups0tl::::res://assets/Slimes/slime_idle3.png
+::res://fsm_demo/::1726738678
+FSM_Demo.tscn::PackedScene::8492432646190806167::1726738678::0::1::::<><>::uid://bb7y58alt8ueq::::res://assets/location/TX Tileset Ground.png<>uid://com4rdbk0fuw3::::res://fsm_agent/FSM_Agent.tscn<>uid://10oi3x5448ju::::res://assets/location/TX Village Props.png

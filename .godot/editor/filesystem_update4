@@ -1,0 +1,4 @@
+res://default_env.tres
+res://fsm_demo/FSM_Demo.tscn
+res://fsm_agent/FSM_Agent.tscn
+res://fsm_agent/FSM_Agent.gd

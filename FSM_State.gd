@@ -1,9 +1,9 @@
-extends Reference
+extends RefCounted
 class_name FSM_State
 
-var agent: KinematicBody2D
+var agent: CharacterBody2D
 
-func _init(_agent: KinematicBody2D):
+func _init(_agent: CharacterBody2D):
 	agent = _agent
 
 func input(fsm_input: FSM_Meta.FSM_Input) -> int:

@@ -1,4 +1,4 @@
-extends KinematicBody2D
+extends CharacterBody2D
 
 signal animation_finished
 
@@ -11,24 +11,23 @@ var speed := 40.0
 var max_jump_height = 1.2 * UNIT_HEIGHT
 var min_jump_height = 0.5 * UNIT_HEIGHT
 var jump_duration = 0.4
-var velocity := Vector2.ZERO
 var gravity: float
 var max_jump_velocity: float
 var min_jump_velocity: float
 
-var animated_sprite: AnimatedSprite
+@onready var animated_sprite: AnimatedSprite2D = $AnimatedSprite2D
 
 func _ready():
 	gravity = 2 * max_jump_height / pow(jump_duration, 2)
 	max_jump_velocity = -sqrt(2 * gravity * max_jump_height)
 	min_jump_velocity = -sqrt(2 * gravity * min_jump_height)
-	animated_sprite = $AnimatedSprite
-	animated_sprite.connect("animation_finished", self, "on_animation_finished")
+	animated_sprite.connect("animation_finished", Callable(self, "on_animation_finished"))
 
 func _physics_process(delta: float):
 	velocity.y += gravity * delta
 	handle_state(delta)
-	velocity = move_and_slide(velocity, Vector2.UP)
+	set_up_direction(Vector2.UP)
+	move_and_slide()
 
 func handle_state(delta: float):
 	var actions := []
@@ -62,4 +61,3 @@ func flip_h(condition: bool):
 
 func on_animation_finished():
 	emit_signal("animation_finished")
-
